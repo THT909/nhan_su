@@ -7,15 +7,15 @@ public class NhanSu {
     private String hoTen;
     private Ngay vaoLam;
     private Ngay ngaySinh;
-    private double hesoLuong;
+    private double heSo;
     private String chucVu;
     
-    public NhanSu(int ma, String hoTen, Ngay vaoLam, Ngay ngaySinh, double hesoLuong, String chucVu) {
+    public NhanSu(int ma, String hoTen, Ngay vaoLam, Ngay ngaySinh, double heSo, String chucVu) {
         this.ma = ma;
         this.hoTen = hoTen;
         this.vaoLam = vaoLam;
         this.ngaySinh = ngaySinh;
-        this.hesoLuong = hesoLuong;
+        this.heSo = heSo;
         this.chucVu = chucVu;
     }
 
@@ -51,12 +51,12 @@ public class NhanSu {
         this.ngaySinh = ngaySinh;
     }
 
-    public double getHesoLuong() {
-        return hesoLuong;
+    public double getHeSo() {
+        return heSo;
     }
 
-    public void setHesoLuong(double hesoLuong) {
-        this.hesoLuong = hesoLuong;
+    public void setHeSo(double heSo) {
+        this.heSo = heSo;
     }
 
     public String getChucVu() {
@@ -73,10 +73,13 @@ public class NhanSu {
         System.out.println("nhap ten nhan vien");
         hoTen= in.nextLine();
         System.out.println("nhap ngay vao lam");
-        // vaoLam=in.nextInt();
-
-
-
+        vaoLam.nhapNgay();
+        System.out.println("nhap ngay sinh");
+        ngaySinh.nhapNgay();
+        System.out.println("nhap he so luong");
+        heSo= in.nextDouble();
+        System.out.println("nhap he chu vu cua nhan vien");
+        heSo= in.nextDouble();
 
     }
 
